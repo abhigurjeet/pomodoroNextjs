@@ -1,0 +1,217 @@
+.taskmiddlesection{
+  background:#eee;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin: 20px;
+}
+.tasksummary{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-color:white;
+  border-radius:10px;
+  width:20vw;
+  margin:30px;
+  padding:15px 40px;
+  color:#1da09c;
+}
+.createtask{
+    text-align: center;
+    margin:30px;
+  }
+  .createtask form{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    display:inline-block;
+    background:white;
+    width:30vw;
+    border-radius:10px;
+    padding:20px;
+    position:relative;
+  }
+  .createtask form input{
+    width:100%;
+    border:0px;
+    box-sizing: border-box;
+    border-radius:10px;
+    outline:none;
+    font-size: 18px;
+    padding:10px;
+  }
+  .createtask form button{
+    position:absolute;
+    bottom:-20px;
+    right:20px;
+    border-radius:50%;
+    aspect-ratio: 1/1; /* Set aspect ratio to 1:1 */
+    width: 50px;
+    text-align: center;
+    outline:none;
+    border:0px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color:#f5ba13;
+    color:white;
+    transition:0.5s;
+  }
+  .createtask form button:hover{
+    transform:scale(1.7);
+  }
+  .filter{
+    background-color:eee;
+    margin:20px;
+    display:flex;
+    justify-content: space-evenly;
+  }
+  .filter select{
+    background-color:white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius:10px;
+    width:20%;
+    text-align:center;
+    border:0;
+    height:25px;
+  }
+  .filter button{
+    background-color:#f5ba13;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius:10px;
+    text-align:center;
+    border:0;
+    color:white;
+    display:flex;
+    align-items:center;
+    transition:0.3s;
+    width:6%;
+    justify-content: space-evenly;
+    height:25px;
+  }
+  .filter button:hover{
+    transform:scale(1.3);
+  }
+  
+  .displaytask{
+    height:40vh;
+    overflow: auto; 
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .displaytask::-webkit-scrollbar {
+    width: 0px; /* Set the width of the scrollbar */
+  }
+  .taskitem{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color:white;
+    margin:20px;
+    padding:5px 10px;
+    border-radius:10px;
+    position:relative;
+    width:80vw;
+  }
+  .taskitem p{ 
+    font-size: 19px;
+    width:90%;
+  }
+  .playbutton{
+    background-color:white;
+    border:0px;
+    color:#f5ba13;
+    position:absolute;
+    border-radius:50%;
+    right:100px;
+    bottom:15px;
+    padding:0;
+    font-size:50px;
+    transition:0.5s;
+  }
+  .playA{
+    color:#f5ba13;
+  }
+  .deletebutton{
+    background-color:white;
+    border:0px;
+    color:#f5ba13;
+    position:absolute;
+    right:40px;
+    padding:0;
+    bottom:15px;
+    font-size:50px;
+    transition:0.5s;
+  }
+  .taskitem button:hover{
+    transform:scale(1.3);
+  }
+  .taskbottomsection{
+    display:flex;
+    align-items: stretch;
+  }
+  
+  @media (max-width: 700px) {
+    .taskmiddlesection{
+      flex-direction:column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0;
+    }
+    .tasksummary{
+      width:90vw;
+      margin:10px auto;
+      height:17vh;
+      padding:0;
+      font-size:70%;
+      text-align: center;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .tasksummary > *{
+      margin:1%;
+    }
+    .createtask{
+      text-align: center;
+      margin:0 auto;
+    }
+    .createtask form{
+      width:85vw;
+      padding:20px;
+    }
+    .createtask form button{
+      bottom:10px;
+      right:20px;
+    }
+    .createtask form button:hover{
+      transform:scale(1);
+    }
+    .filter{
+      margin:20px 0px;
+    }
+    .filter button{
+      width:20%;
+    }
+    .filter button:hover{
+      transform:scale(1);
+    }
+    .displaytask{
+      height:35vh;
+    }
+    .taskitem{
+      margin:5px;
+      padding:10px;
+      border-radius:10px;
+      position: static;
+      width:90vw;
+      word-wrap: break-word; 
+    }
+    .taskitem p{
+      width:100%;
+    }
+    .taskitem span{
+      display:block;
+    }
+    .playbutton{
+      position: static;
+      margin-left:60%;
+    }
+    .deletebutton{
+      position: static;
+      margin-left:8%;
+    }
+  }

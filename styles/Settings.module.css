@@ -1,0 +1,70 @@
+.timersettings{
+    margin:2% auto;
+    width:50vw;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color:white;
+    border-radius:10px;
+    text-align:center;
+    padding:2%;
+}
+.timersettings h1{
+    color:#f5ba13;
+}
+.timersettings p{
+    display:inline-block;
+    width:300px;
+    font-size:135%;
+    color:#1da09c;
+}
+.numInput{
+    text-align:center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border:#f5ba13;
+    border-radius:10px;
+    height:50px;
+    font-size: 100%;
+}
+.timersettings button{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color:#f5ba13;
+    border-radius:10px;
+    color:white;
+    border:0;
+    height:35px;
+    width:15%;
+    margin-top:3%;
+    font-size:110%;
+}
+.timersettings button:hover{
+    transform:scale(1.3);
+}
+.checkInput{
+    height:20px;
+    width:20px;
+}
+@media (max-width: 700px) {
+    .timersettings{
+    width:90vw;
+    }
+    .timersettings h1{
+        font-size:120%;
+    }
+    .timersettings p{
+        width:100%;
+        font-size:105%;
+    }
+    .numInput{
+        height:40px;
+        width:50%;
+        font-size: 100%;
+    }
+    .timersettings button{
+        height:35px;
+        width:25%;
+        margin-top:6%;
+        font-size:110%;
+    }
+    .timersettings button:hover{
+        transform:scale(1);
+    }
+}
